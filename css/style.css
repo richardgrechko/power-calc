@@ -1,1 +1,9 @@
-
+@font-face {
+    font-family: "Michroma";
+    src: url("../fonts/Michroma-Regular.ttf") format("ttf");
+}
+html {
+  background-color: black;
+  color: white;
+  font-family: "Michroma";
+}
