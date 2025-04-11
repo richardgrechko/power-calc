@@ -6,12 +6,7 @@ html {
   background-color: black;
   color: white;
   font-size: 24px;
-  font-family: "Michroma", Helvetica, Arial, sans-serif;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  margin-bottom: 2rem;
-  margin-top: 1rem;
+  font-family: "Michroma";
 }
 .big {
   color: white;
