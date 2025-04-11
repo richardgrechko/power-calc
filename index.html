@@ -1,1 +1,31 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>richard's abbreviations</title>
+</head>
+<body>
+<style>
+body {
+  background-color: #000000;
+}
+</style>
+    <div class="container">
+        <div id="inputContainer">
+            <input type="number" id="headInput" value="2">
+            <input type="number" id="exponentInput" value="31">
+        </div>
+        <button onclick="calculate()">Calculate</button>
+        <h1 id="result" style="text-align: center; font-family: 'Michroma'; font-size: 5em; color: white">2.147B</h1>
+        <h1 id="formattedResult" class="result"></h1>
+    </div>
 
+    <script src="powAbbrev.js"></script>
+    <script>
+    function calculate() {
+      let base = parseFloat(document.getElementById('headInput').value);
+      let exponent = parseFloat(document.getElementById('exponentInput').value);
+      document.getElementById('result').textContent = new powAbbrev(base, exponent);
+    }
+    </script>
+
+</body></html>
