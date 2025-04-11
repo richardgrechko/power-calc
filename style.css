@@ -1,0 +1,19 @@
+@font-face {
+    font-family: "Michroma";
+    src: url("../Michroma-Regular.ttf") format("ttf");
+}
+html {
+  background-color: black;
+  color: white;
+  font-size: 24px;
+  font-family: "Michroma", Helvetica, Arial, sans-serif;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+}
+.big {
+  color: white;
+  font-size: 32px;
+}
