@@ -78,6 +78,9 @@ class powAbbrev
 		{
 			this.result = "1/" + illion((-n/3)-1)
 		}
+	}
+	toString()
+	{
 		return this.result
 	}
 }
