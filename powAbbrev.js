@@ -98,7 +98,7 @@ class powAbbrev
 		}
 		else if (n >= 3)
 		{
-			this.result = (Math.pow(10,n)-0.0005000000001).toFixed(3) + illion((n/3)-1,mode)
+			this.result = (Math.pow(10,n%3)-0.0005000000001).toFixed(3) + illion((n/3)-1,mode)
 		}
 		else if (n > -3)
 		{
