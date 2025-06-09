@@ -92,7 +92,11 @@ class powAbbrev
 		this.base = base;
 		this.pow = pow;
 		let n = Math.log10(base)*pow;
-		if (n >= 3_000_000_003)
+		if (n == Infinity)
+		{
+			this.result = "∞"
+		}
+		else if (n >= 3_000_000_003 && isFinite(n))
 		{
 			this.result = illion((n/3)-1,mode)
 		}
@@ -108,9 +112,13 @@ class powAbbrev
 		{
 			this.result = "1/" + (Math.pow(10,(-n)%3)-0.0004999999).toFixed(3) + illion((-n/3)-1,mode)
 		}
-		else
+		else if (n <= -3_000_000_003 && isFinite(n))
 		{
 			this.result = "1/" + illion((-n/3)-1,mode)
+		}
+		else if (n == -Infinity)
+		{
+			this.result = "0.000"
 		}
 	}
 	toString()
